@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner with Video -->
+    <div class="banner">
+        <video autoplay muted loop>
+            <source src="video/banner-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="banner-text">
+            <h2><b>BlissHive</b></h2>
+            <p><b>Crafting Moments, Creating Memories</b></p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction -->
+        <section class="intro">
+            <img src="images/logo.png" alt="Company Logo">
+            <div class="description">
+                <h2>About Us</h2>
+                <p>BlissHive is an event management company that specializes in creating unforgettable experiences with a touch of elegance and joy. The name "BlissHive" symbolizes a place where happiness and celebration come together, much like bees working harmoniously to build something beautiful and sweet.</p>
+            </div>
+        </section>
+
+        <!-- Featured Events -->
+        <section class="featured-events">
+            <h3>Our Upcoming Events</h3>
+            <div class="events-grid">
+                <div class="event card">
+                    <img src="images/event1.jpg" alt="Event 1">
+                    <h5>Music Concert</h5>
+                    <a href="login.html">View Event</a>
+                </div>
+                <div class="event card">
+                    <img src="images/event2.jpg" alt="Event 2">
+                    <h5>Art Exhibition</h5>
+                    <a href="login.html">View Event</a>
+                </div>
+                <div class="event card">
+                    <img src="images/event3.jpg" alt="Event 3">
+                    <h5>Comedy Shows</h5>
+                    <a href="login.html">View Event</a>
+                </div>
+                <div class="event card">
+                    <img src="images/event4.jpg" alt="Event 4">
+                    <h5>Food Festival</h5>
+                    <a href="login.html">View Event</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-section">
+            <h2 class="text-center text-black"><b>Contact Us</b></h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- Contact Form -->
+                    <div class="col-md-5">
+                        <div class="contact-form text-center">
+                            <form action="#" method="POST">
+                                <input type="text" name="name" placeholder="Your Name" required class="form-control mb-2">
+                                <input type="email" name="email" placeholder="Your Email" required class="form-control mb-2">
+                                <input type="text" name="subject" placeholder="Subject" required class="form-control mb-2">
+                                <textarea name="message" rows="5" placeholder="Your Message" required class="form-control mb-2"></textarea>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="col-md-5 text-center">
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i> NewTown, Kolkata</li>
+                                <li><i class="fas fa-envelope"></i> Bliss@Hive.com</li>
+                                <li><i class="fas fa-phone"></i> +91 8240546461</li>
+                            </ul>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58940.95082614657!2d88.45151535311928!3d22.58622992493008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275350398a5b9%3A0x75e165b244323425!2sNewtown%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1724752520032!5m2!1sen!2sin"
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER AREA -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Information -->
+                <div class="col-md-4">
+                    <h5>BlissHive</h5>
+                    <p>BlissHive: Crafting Moments, Creating Memories.</p>
+                    <p>&copy; 2024 Event Booking Platform. All rights reserved.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> NewTown, Kolkata</p>
+                    <p><i class="fas fa-phone"></i> +91 8240546461</p>
+                    <p><i class="fas fa-envelope"></i> Bliss@Hive</p>
+
+                    <!-- Social Media Links -->
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

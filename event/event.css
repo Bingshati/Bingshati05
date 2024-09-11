@@ -1,0 +1,150 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    background-color: black;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffdd57;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Banner Image */
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+/* Event Details Section */
+.event-details {
+    background-color: #454747;
+    color: white;
+    padding: 40px 20px;
+}
+
+.event-details h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.event-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-fluid {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 20px;
+}
+
+.event-info h4 {
+    margin-bottom: 20px;
+}
+
+.event-info p {
+    margin-bottom: 10px;
+}
+
+/* Custom Button Styles */
+.custom-btn {
+    background-color: black; /* Black background color */
+    color: white; /* White text color */
+    padding: 8px 16px; /* Smaller padding for a smaller button */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.custom-btn:hover {
+    background-color: #eebf01; /* Darker black on hover */
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer p {
+    color: #f4f4f4;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons a {
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #f4f4f4;
+}

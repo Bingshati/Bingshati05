@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Basic resets */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Header styling */
+        header {
+            background-color: black;
+            padding: 10px 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ffdd57;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+            object-fit: cover;
+        }
+        /* Intro section */
+        .intro {
+            padding: 40px;
+            /*margin-bottom: 10px;*/
+            justify-content: space-evenly;
+            display: flex;
+            align-items: center;
+            background-color: #454747;
+        }
+
+        .intro img {
+            /*width: 25%; /* Reduced the width from 50% to 40% */
+            height: auto;
+            max-height: 180px; /* Reduced the maximum height */
+            object-fit: cover;
+            border-radius: 500px;
+        }
+
+        .description{
+            width: 50%;
+            padding-left: 150px;
+            color: white;
+        }
+        .description h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .description p {
+            font-size: 1.1em;
+        }
+        /* Footer */
+        .footer {
+            background-color: black; /* Green background */
+            color: #ffffff; /* White text */
+            padding: 40px 0;
+        }
+
+        .footer h5 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer p {
+            color: #f4f4f4;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer ul li a {
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .footer .social-icons a {
+            color: #ffffff;
+            font-size: 18px;
+            margin-right: 10px;
+            transition: color 0.3s;
+        }
+
+        .footer .social-icons a:hover {
+            color: #f4f4f4;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Events</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="images/about_us.jpg" alt="Event Banner">
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction -->
+        <section class="intro">
+            <img src="images/logo.png" alt="Company Logo">
+            <div class="description">
+                <h2>About Us</h2>
+                <p>BlissHive is an event management company that specializes in creating unforgettable experiences with a touch of elegance and joy. The name "BlissHive" symbolizes a place where happiness and celebration come together, much like bees working harmoniously to build something beautiful and sweet. Our team is dedicated to curating events that resonate with sophistication and delight, ensuring every detail is meticulously planned and executed.At BlissHive, we believe in transforming moments into cherished memories.</p>
+            </div>
+        </section>
+
+
+    <!-- FOOTER AREA -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Information -->
+                <div class="col-md-4">
+                    <h5>BlissHive</h5>
+                    <p>BlissHive: Crafting Moments, Creating Memories.</p>
+                    <p>&copy; 2024 Event Booking Platform. All rights reserved.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> NewTown, Kolkata</p>
+                    <p><i class="fas fa-phone"></i> +91 8240546461</p>
+                    <p><i class="fas fa-envelope"></i> Bliss@Hive</p>
+
+                    <!-- Social Media Links -->
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

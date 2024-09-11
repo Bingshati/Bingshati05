@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="dash.html">Home</a></li>
+                <li><a href="add_event.html">Add Event</a></li>
+                <li><a href="next.php">Check Event</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="event">
+        <div class="form-box">
+            <h1><b>Add Events</b></h1>
+        
+            <form action="event.php" method="post" enctype="multipart/form-data" class="form-grid">
+                <div>
+                    <label for="name">Event Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="tagline">Tagline:</label>
+                    <input type="text" id="tag" name="tag" required>
+                </div>
+        
+                <!-- Date and Time fields aligned side by side -->
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div>
+                    <label for="time">Time:</label>
+                    <input type="text" id="time" name="time" required>
+                </div>
+        
+                <div>
+                    <label for="location">Location:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div>
+                    <label for="price">Price:</label>
+                    <input type="text" id="price" name="price" required>
+                </div>
+        
+                <div class="full-width">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="des" required></textarea>
+                </div>
+                
+                
+                
+                <div class="full-width">
+                    <label for="image">Image:</label>
+                    <input type="file" id="image" name="image" required>
+                </div>
+        
+                <div class="full-width">
+                    <button type="submit" class="btn btn-sm btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Header styling */
+header {
+    background-color: black;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffdd57;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Event section background styling */
+.event {
+    background-image: url("https://img.freepik.com/free-photo/female-wedding-planner-working-ceremony_23-2150167261.jpg?t=st=1725750466~exp=1725754066~hmac=351a0b9567abf54f6be60237125e92c2451c980efa405d53337191ad6ff83946&w=740");
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+    color: black;
+}
+
+/* Form box styling */
+.form-box {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.404);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid container for form elements */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 15px; /* Space between items */
+}
+
+/* Make certain fields span both columns */
+.form-grid .full-width {
+    grid-column: span 2;
+}
+
+/* Form elements styling */
+.form-grid input[type="text"],
+.form-grid input[type="date"],
+.form-grid textarea,
+.form-grid input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Ensure textarea and file input also span both columns */
+textarea {
+    height: 80px;
+}
+
+/* Submit button styling */
+.form-box button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-box button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+    background-color: black; /* Green background */
+    color: #ffffff; /* White text */
+    padding: 40px 0;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer p {
+    color: #f4f4f4;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons a {
+    color: #ffffff;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #f4f4f4;
+}
+
+.form-box h1{
+    text-align: center;
+}
